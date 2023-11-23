@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+}
+
+header {
+    text-transform: uppercase;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 20px 0 20px 0;
+    justify-content: space-between;
+    gap: 2em;
+    align-items: center;
+
+    & li {
+        cursor: pointer;
+    }
+
+    & li:nth-child(1) {
+        margin: 0 27em 0 0;
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        gap: 10px;
+        & a {
+            align-self: center;
+        }
+    }
+
+    & li:not(:first-child) {
+        font-weight: 700;
+    }
+}
+
+nav ul li:not(:first-child):hover {
+    color: orangered;
+    transition: all 0.2s ease-in-out;
+}
+a {
+    text-decoration: none;
+}
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    padding: 5em 18em;
+}
+
+#btn {
+    align-self: flex-start;
+}
+
+.welcome__inner {
+    display: flex;
+    margin-bottom: 1.5em;
+}
+
+.welcome h2 {
+    text-align: center;
+    color: grey;
+    font-weight: 400;
+    font-size: 38px;
+}
+
+#left {
+    text-align: left;
+}
+
+.welcome p {
+    color: grey;
+    font-size: 1.1rem;
+}
+
+.welcome button {
+    background-color: grey;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+}
+
